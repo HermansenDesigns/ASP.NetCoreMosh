@@ -5,10 +5,8 @@ using Vega.Models;
 
 namespace Vega.Controllers.Resources
 {
-    public class MakeResource
+    public class MakeResource : KeyValuePairResource
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<ModelResource> Models { get; set; } = new Collection<ModelResource>();
+        public ICollection<KeyValuePairResource> Models { get; set; } = new Collection<KeyValuePairResource>();
     }
 }

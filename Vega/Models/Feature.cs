@@ -4,7 +4,7 @@ namespace Vega.Models
 {
     public class Feature
     {
-        public long id { get; set; }
+        public long Id { get; set; }
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
